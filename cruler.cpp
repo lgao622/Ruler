@@ -30,20 +30,20 @@ void CRuler::setOrientation(Qt::Orientation orn)
         if (m_orn == Qt::Horizontal) {
             m_to.setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
             QLinearGradient linearGradient(0,0,0,m_pixmm * 30);
-            linearGradient.setColorAt(0.0,QColor(100,100,100,120));
-            linearGradient.setColorAt(0.1,QColor(200,200,200,120));
-            linearGradient.setColorAt(0.5,QColor(255,255,255,120));
-            linearGradient.setColorAt(0.9,QColor(200,200,200,120));
-            linearGradient.setColorAt(1.0,QColor(100,100,100,120));
+            linearGradient.setColorAt(0.0,QColor(100,100,100,180));
+            linearGradient.setColorAt(0.1,QColor(200,200,200,180));
+            linearGradient.setColorAt(0.5,QColor(255,255,255,180));
+            linearGradient.setColorAt(0.9,QColor(200,200,200,180));
+            linearGradient.setColorAt(1.0,QColor(100,100,100,180));
             m_brush = QBrush(linearGradient);
         }
         else {
             QLinearGradient linearGradient(0,0,m_pixmm * 30,0);
-            linearGradient.setColorAt(0.0,QColor(100,100,100,120));
-            linearGradient.setColorAt(0.1,QColor(200,200,200,120));
-            linearGradient.setColorAt(0.5,QColor(255,255,255,120));
-            linearGradient.setColorAt(0.9,QColor(200,200,200,120));
-            linearGradient.setColorAt(1.0,QColor(100,100,100,120));
+            linearGradient.setColorAt(0.0,QColor(100,100,100,180));
+            linearGradient.setColorAt(0.1,QColor(200,200,200,180));
+            linearGradient.setColorAt(0.5,QColor(255,255,255,180));
+            linearGradient.setColorAt(0.9,QColor(200,200,200,180));
+            linearGradient.setColorAt(1.0,QColor(100,100,100,180));
             m_brush = QBrush(linearGradient);
         }
     }
