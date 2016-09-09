@@ -10,7 +10,6 @@
 CRuler::CRuler(QWidget *parent) :
     QWidget(parent)
 {
-    //m_orn = Qt::Horizontal;
     HDC hdc = GetDC(0);
     m_widthmm = GetDeviceCaps(hdc, HORZSIZE);
     m_heightmm = GetDeviceCaps(hdc, VERTSIZE);
