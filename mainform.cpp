@@ -11,9 +11,9 @@ MainForm::MainForm(QWidget *parent) :
     setWindowFlags(Qt::FramelessWindowHint);
     setAttribute(Qt::WA_TranslucentBackground);
 
-    m_actOrn = new QAction("垂直", this);
+    m_actOrn = new QAction("鍨傜洿", this);
     connect(m_actOrn, SIGNAL(triggered()), SLOT(onOrn()));
-    m_actAlign = new QAction("对齐", this);
+    m_actAlign = new QAction("瀵归綈", this);
     connect(m_actAlign, SIGNAL(triggered()), SLOT(onAlign()));
     addAction(m_actOrn);
     addAction(m_actAlign);
@@ -38,13 +38,13 @@ void MainForm::onMove(QPoint p)
 
 void MainForm::onOrn()
 {
-    if (m_actOrn->text() == "垂直") {
+    if (m_actOrn->text() == "鍨傜洿") {
         ui->ruler->setOrientation(Qt::Vertical);
-        m_actOrn->setText("水平");
+        m_actOrn->setText("姘村钩");
     }
     else {
         ui->ruler->setOrientation(Qt::Horizontal);
-        m_actOrn->setText("垂直");
+        m_actOrn->setText("鍨傜洿");
     }
 
     resize(ui->ruler->sizeHint());
@@ -53,7 +53,7 @@ void MainForm::onOrn()
 
 void MainForm::onAlign()
 {
-    m_actOrn->text() == "垂直" ? move(0, pos().y()) : move(pos().x(), 0);
+    m_actOrn->text() == "鍨傜洿" ? move(0, pos().y()) : move(pos().x(), 0);
 }
 
 void MainForm::keyReleaseEvent(QKeyEvent *e)

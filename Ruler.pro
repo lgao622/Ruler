@@ -12,13 +12,14 @@ TARGET = Ruler
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
+SOURCES +=\
         mainform.cpp \
-    cruler.cpp
+    cruler.cpp \
+    main.cpp
 
 HEADERS  += mainform.h \
     cruler.h
 
 FORMS    += mainform.ui
 
-LIBS += Winmm.lib kernel32.lib user32.lib gdi32.lib GdiPlus.lib ole32.lib
+#LIBS += Winmm.lib kernel32.lib user32.lib gdi32.lib GdiPlus.lib ole32.lib
